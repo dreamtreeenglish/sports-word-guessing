@@ -1,0 +1,22 @@
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  padding: 20px;
+  font-size: 20px;
+  background-color: lightgreen;
+}
+#hint {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+input {
+  padding: 5px;
+}
+button {
+  padding: 5px 10px;
+  cursor: pointer;
+}
+#message {
+  margin-top: 10px;
+  font-weight: bold;
+}
