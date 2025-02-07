@@ -1,22 +1,78 @@
+/* General Styles */
 body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background-color: #f3f4f6;
+  color: #333;
   font-family: Arial, sans-serif;
-  text-align: center;
-  padding: 20px;
-  font-size: 20px;
-  background-color: lightgreen;
+  margin: 0;
 }
-#hint {
-  font-size: 20px;
+
+/* Game Container */
+#game-container {
+  background: white;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  width: 500px;
+}
+
+/* Heading */
+h1 {
+  font-size: 24px;
+  font-weight: bold;
+  color: #1e40af;
   margin-bottom: 10px;
 }
-input {
-  padding: 5px;
+
+/* Counter */
+p span#counter {
+  font-weight: bold;
+  color: #2563eb;
 }
+
+/* Hint Text */
+#hint {
+  font-size: 16px;
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+
+/* Input Field */
+#guess {
+  width: 90%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  margin-top: 5px;
+  font-size: 16px;
+}
+
+/* Submit Button */
 button {
-  padding: 5px 10px;
+  width: 100%;
+  padding: 10px;
+  margin-top: 10px;
+  background-color: #2563eb;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-size: 16px;
   cursor: pointer;
+  transition: background 0.3s ease-in-out;
 }
+
+button:hover {
+  background-color: #1e3a8a;
+}
+
+/* Message */
 #message {
   margin-top: 10px;
+  font-size: 14px;
   font-weight: bold;
 }
