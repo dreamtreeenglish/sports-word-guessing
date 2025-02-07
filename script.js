@@ -14,6 +14,8 @@ let userAnswers = [];
 
 function checkGuess() {
 
+  const audio = new Audio("click-sound.mp3");
+
   const userGuess = document.getElementById("guess").value.toLowerCase();
   const correctAnswer = words[currentIndex].answer;
   
@@ -34,6 +36,8 @@ function checkGuess() {
       showResults();
   }
   document.getElementById("guess").focus();
+
+  audio.play();
 }
 
 function updateGame() {
