@@ -77,7 +77,7 @@ function restartGame() {
   document.getElementById("game-container").innerHTML = `
     <p id="hint">Hint: ${words[currentIndex].hint}</p>
     <input type="text" id="guess">
-    <button onclick="checkGuess()">Check</button>
+    <button onclick="checkGuess()">Submit</button>
   `;
   // Reset the counter to 1/5 when restarting
   document.getElementById("counter").textContent = "1";
