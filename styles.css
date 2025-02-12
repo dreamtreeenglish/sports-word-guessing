@@ -9,6 +9,8 @@ body {
   color: #333;
   font-family: Arial, sans-serif;
   margin: 0;
+  padding: 20px; /* Added padding for better spacing on mobile */
+  text-align: center;
 }
 
 /* Game Container */
@@ -18,12 +20,13 @@ body {
   border-radius: 12px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
   text-align: center;
-  width: 500px;
+  max-width: 90%; /* Makes it responsive */
+  width: 500px; /* Default for larger screens */
 }
 
 /* Heading */
 h1 {
-  font-size: 24px;
+  font-size: 26px;
   font-weight: bold;
   color: #1e40af;
   margin-bottom: 10px;
@@ -37,15 +40,15 @@ p span#counter {
 
 /* Hint Text */
 #hint {
-  font-size: 16px;
+  font-size: 18px;
   font-weight: 500;
   margin-bottom: 10px;
 }
 
 /* Input Field */
 #guess {
-  width: 90%;
-  padding: 10px;
+  width: 90%; /* Full width for better usability on mobile */
+  padding: 12px;
   border: 1px solid #ccc;
   border-radius: 6px;
   margin-top: 5px;
@@ -55,7 +58,7 @@ p span#counter {
 /* Submit Button */
 button {
   width: 100%;
-  padding: 10px;
+  padding: 12px;
   margin-top: 10px;
   background-color: #2563eb;
   color: white;
@@ -75,4 +78,24 @@ button:hover {
   margin-top: 10px;
   font-size: 14px;
   font-weight: bold;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+  h1 {
+    font-size: 22px;
+  }
+  
+  #hint {
+    font-size: 16px;
+  }
+  
+  #game-container {
+    padding: 15px;
+  }
+  
+  button {
+    padding: 10px;
+    font-size: 14px;
+  }
 }
